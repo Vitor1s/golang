@@ -1,0 +1,133 @@
+ O que é tipo em go? 
+
+ :: Tipo ele tem uma caracteristica definida exemplo  fmt.Println("Hello Word") O "Hello Word" e um tipo (string)
+
+
+O que é tipo numero? 
+
+:: Tipo numero quando vamos usar temos 2 opçòes "int" ou "float32" ou "float64"  int = quando são inteiros tipo 1,2,10,20,30 ja os float é quando temos numeros quebrados 2.5 10.6 e por ai vai.
+
+Tipos dentro de uma string
+
+:: Temos algumas funções que são usadas dentro de uma string como o len que conta a quantidade dois caracteries tem o [3] que mostra o numero refente aquela letra e temos a soma de strings "ola + "Tudo bem"
+
+OBS = No len se tiver acentos pode ser que ele conte como uma letra a mais.
+
+OBS = No "[]" ele retorna nao a letra em si e sim o código Unicode/ASCII 
+ 
+
+ O que  são Boleanos? 
+
+ :: São expressões logicas que vem da matematica onde usamos algumas expressões para definir se ser true or false, onde cada expressão remete a um retorno de true or false onde && = sendo (e) isso faz que quando tenha um false sempre seja false, || = Esse é (ou) sempre prevalesse o true por ser true ou false, ! = Esse vem composto pelo contrario do que estamos colocando se for !false o resultado e o oposto que seria true e se fro !true vem o oposto que  é false
+
+Expressões  
+
+true && true =  true   (e)         true || true = true  (ou)      !true = false (negação) 
+ 
+true && false = false  (e)         true || false = true (ou)      !false = true (negação)
+
+false && true = false  (e)         false || true = true (ou)
+
+false && false = false (e)         false || false = false (ou)
+
+
+
+O que são inferencia de Tipos?
+
+:: A inferencia acontece pelo fato do Go ja entender o qu eé uma string, int, float, ele ja entende que quando coloco algo entre "aspas" ele sabe que é uma string, coloquei um numero 40  ele sabe que é int e um numero quebrado 4.5 sabe que é um float 
+
+
+Palavras reservadas e como funcionam? 
+
+:: Palavras reservadas em Go são termos pré-definidos que fazem parte da linguagem. Elas não podem ser usadas como nome de variáveis, funções ou qualquer outro identificador criado pelo programador.
+
+Controle de fluxo:
+if     | else     | switch   | case      | for
+break  | continue | goto     | fallthrough
+
+Declarações e definições:
+var    | const    | func     | type      | struct
+interface | package | import | return
+
+Concorrência:
+go     | select   | chan
+
+Outros:
+defer  | range    | map
+
+
+
+Como usar: 
+
+#### Controle de fluxo
+
+if           condição (se)                                          if x > 10 {fmt.Println("Maior")}
+
+else         Senão                                                  else {fmt.Println("Menor")}
+
+switch       Varios casos para uma variável                         switch dia {case "Segunda":}
+
+case         case dentro do switch                                  case "Terça": fmt.Println("3")
+
+for          laço de repetição                                      for  i := 0; i < 5; i++ {.....}
+
+break        interrompe um laço no switch                           if x == 5 {break}
+
+continue     Pula para a proxima interação do for                  if x%2 == 0 {contiue}
+
+goto         Vai direto para um rótulo (pouco usado)               goto FIM ..... FIM:
+
+fallthrough  Força a execução do proximo case no switch            case 1: fmt.Println("UM"); 
+                                                                   fallthrough  
+
+
+#### Declarações e Definições
+
+var        Decalra variável                  var nome string = "Vitor"
+
+const      Declara constante(valor fixo)     const PI = 3.14
+
+func       Declara função                    func soma(a, b int) int {......}
+
+type       Cria novo tipo                    type Pessoa struct {Nome string}
+
+struct     Cria estrutura(tipo composto)     struct { Nome string}
+
+package    Define pacode atual do arquivo    package main
+
+import     importa pacotes                   import "fmt"
+
+return     Retorna um valor de uma função    return a + b
+
+
+
+#### Concorrência
+
+go     Executa função de forma concorrente  go minhaFuncao()
+
+select Escolhe entre múltiplos canais       select {case x := <-canal: ....}
+
+chan   Cria canal para cominicação          c := make(chan int)
+
+
+#### Outros
+
+defer  Adia execução ate o final da função   defer fmt.Println("fim")
+
+range  itera soibre array, slce, map, etc.   for i, v := range lista {.....}
+
+map   Estrutura de chave ->                  map[string]int{"a": 1}
+
+
+
+Expressõpes e comandos 
+
+- Comando de repetição: fer
+- Comando de atribuição: :=
+- Comando de declaração: var
+- Comando de Condicionais:if, switch
+
+
+Variaveis 
+
+:: Aprendi como funciona uma variavel em GO. Chamamos o packge main no inicio da pagina que o nome coloco do arquivo fazemos a importaçào do fmt e depois criamos a funçào com func e dentro colocamos a varaiavel que chamamos com var que é uma palavra reservada do go dei o nome de x, como o go ja reconehce como string devido a forma como estou nomendo o x que é com "Hello Word" nao precisei definir o tipo, e depois para chamar essa variavel usei o fmt que importei com comand Println(x) e ao rodar ele retorna o valor de x.
