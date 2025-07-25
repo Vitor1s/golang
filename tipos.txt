@@ -129,5 +129,24 @@ Expressõpes e comandos
 
 
 Variaveis 
-
+ O que são variaveis
 :: Aprendi como funciona uma variavel em GO. Chamamos o packge main no inicio da pagina que o nome coloco do arquivo fazemos a importaçào do fmt e depois criamos a funçào com func e dentro colocamos a varaiavel que chamamos com var que é uma palavra reservada do go dei o nome de x, como o go ja reconehce como string devido a forma como estou nomendo o x que é com "Hello Word" nao precisei definir o tipo, e depois para chamar essa variavel usei o fmt que importei com comand Println(x) e ao rodar ele retorna o valor de x.
+
+Obs:: Ela é esclusiva para armazenar um tipo especifico. 
+Obs2:: Descobri tambem que e possivel  chamar o nome do var de forma diferente em vez de seta var x string = "Hello" voce pode fazer assim var z string  depois voce define o tipo chamando a variavel z = "Hello".
+
+
+Blocos e escopos 
+
+::Ate o momento entendo que bloco é a variavel, quando montada ser torna um bloco  
+
+Ex:: var x string = "Hello", isso é um bloco que pode ser usado ate mesmo fora da func(função) desde de que o fmt.Println que ira printar o nome(tipo) dessa funbção esteja dentro da func(função)
+
+
+Arrays, Fatias e Mapas
+
+O que são?
+:: Entendi que uma array e uma sequancia de elementos, tipo 0, 1, 2, 3, 4, 5. mas pode ser uma sequancia de um numero elemento como 0, 0, 0, 0, 0, onde so tera um tipo compondo por um tamanho fixo. 
+:: A Fatia e coposta por uma parte da nossa array tambem com um unico tipo, mas com tamanhao variavel.
+:: E o Mapas ele serve realmente como um mapa mas para procurar o valor de acordo com a palavra associada, conhecido tambem como tabelas hash, arrays associativos ou dicionários.
+
