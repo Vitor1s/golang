@@ -130,4 +130,70 @@ Expressõpes e comandos
 
 Variaveis 
 
-:: Aprendi como funciona uma variavel em GO. Chamamos o packge main no inicio da pagina que o nome coloco do arquivo fazemos a importaçào do fmt e depois criamos a funçào com func e dentro colocamos a varaiavel que chamamos com var que é uma palavra reservada do go dei o nome de x, como o go ja reconehce como string devido a forma como estou nomendo o x que é com "Hello Word" nao precisei definir o tipo, e depois para chamar essa variavel usei o fmt que importei com comand Println(x) e ao rodar ele retorna o valor de x.
+:: Aprendi como funciona uma variavel em GO. Chamamos o packge main no inicio da pagina que o nome coloco do arquivo fazemos a importaçào do fmt e depois criamos a funçào com func e dentro colocamos a varaiavel que chamamos com var que é uma palavra reservada do go dei o nome de x, como o go ja reconehce como string devido a forma como estou nomeando o x que é com "Hello Word" nao precisei definir o tipo, e depois para chamar essa variavel usei o fmt que importei com comand Println(x) e ao rodar ele retorna o valor de x.
+
+
+Abstrações 
+
+:: Esconde detalhes desnecessarios do programa, e tibo nao saber como e feito um alimento processado voce sé consome. tipo quero comer um peito de franco, compro no mercado e como peito de frango, como foi feito nao importa.
+
+
+Parametros
+
+:: Basicamente temos a função cumprimentar pode ser chamada várias vezes com argumentos diferentes, porque definimos dentro dela um parâmetro chamado nome, que é como um espaço reservado.
+   Esse parâmetro nome vai ser substituído por qualquer valor (argumento) que eu colocar dentro dos parênteses, tipo "Ônibus", "Vitor" ou "Café".
+   Isso significa que estamos usando o mesmo parâmetro para receber diferentes argumentos, e a função se comporta conforme o valor que chega.
+
+
+   
+Estruturas
+
+:: Conhecido como struct, é a melhor forma de organizar dados no go, por nao termos objetos e classes usamos a struct, sua estrutura e composta por.
+
+	 type Pessoas struct{          
+    nome string
+    idade int
+    altura float32
+   } 
+
+   pessoa := Pessoas{"Vitor", 25, 1.80}
+   fmt.Println(pessoa)
+
+
+
+Sistemas de tispos 
+
+:: Você está no caminho certo com a ideia, mas vamos **ajustar sua explicação** pra ficar mais clara e correta:
+
+---
+
+### ✅ Correção da sua explicação:
+
+**Sistemas de tipos**
+
+:É o conjunto de regras que define **quais tipos de valores** (como `int`, `float32`, `string`, etc.) **uma linguagem permite e como esses tipos podem ser usados**. Em Go, cada valor tem um tipo bem definido, e o compilador verifica isso para evitar erros. Por exemplo, você não pode somar um número com uma string.
+
+---
+
+### 🧠 Em outras palavras (bem simples):
+
+> O sistema de tipos é como se o Go falasse:
+> “Me diga exatamente o que cada coisa é (número, texto, decimal...), que eu cuido pra você não misturar tudo e causar erro.”
+
+---
+
+### ✅ Exemplo simples em Go:
+
+```go
+var idade int = 25
+var nome string = "Vitor"
+
+// Isso daria erro:
+fmt.Println(idade + nome) // ❌ não pode somar número com texto
+```
+
+Go vai te impedir de fazer esse tipo de mistura porque ele tem um sistema de tipos **forte e estático** (ou seja, rígido e verificado em tempo de compilação).
+
+
+Interface e Exceções
+
